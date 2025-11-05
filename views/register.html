@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeWare - Registro</title>
+    <link rel="icon" href="../assets/img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/login.css">
+    <link rel="stylesheet" href="../assets/styles/global.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="logo">
+                <img src="../assets/img/logo.png" alt="Logo">
+            </div>
+            <h2>Crear cuenta</h2>
+            <form id="registerForm">
+                <div class="input-group">
+                    <input type="text" id="reg-username" placeholder="Usuario" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="reg-email" placeholder="Correo electrónico" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="reg-password" placeholder="Contraseña" required>
+                </div>
+                <button type="submit" class="btn">Registrarse</button>
+            </form>
+            <div id="reg-message" class="success"></div>
+            <p class="register-link">
+                ¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a>
+            </p>
+        </div>
+    </div>
+    <script src="../scripts/register.js"></script>
+</body>
+</html>

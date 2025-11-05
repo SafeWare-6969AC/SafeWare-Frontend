@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@safeware.com",
+      "password": "admin123",
+      "role": "Administrador"
+    },
+    {
+      "id": 2,
+      "username": "operario1",
+      "email": "operario@safeware.com",
+      "password": "operario123",
+      "role": "Operario"
+    },
+    {
+      "id": 3,
+      "username": "supervisor1",
+      "email": "supervisor@safeware.com",
+      "password": "super123",
+      "role": "Supervisor"
+    }
+  ]
+}

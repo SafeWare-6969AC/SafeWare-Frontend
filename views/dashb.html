@@ -1,77 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="icon" href="../assets/img/logo.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SafeWare - Dashboard</title>
-    <meta name="author" content="TheAnalytics">
-
-        <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Styles  -->
+    <link rel="icon" href="../assets/img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/styles/dashboard.css">
+    <link rel="stylesheet" href="../assets/styles/global.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <header>
-        <nav>
+    <div class="dashboard">
+        <aside class="sidebar">
             <div class="logo">
-                <img src="../assets/img/logo.png" alt="SafeWare Logo">
+                <img src="../assets/img/logo.png" alt="Logo">
+                <h3>SafeWare</h3>
             </div>
-            <ul class="nav-links">
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Alertas</a></li>
-                <li><a href="#">Mantenimiento</a></li>
-                <li><a href="#">Configuración</a></li>
-            </ul>
-        </nav>
-    </header>
+            <nav>
+                <a href="#" class="active"><span>Dashboard</span></a>
+                <a href="#"><span>Alertas</span></a>
+                <a href="#"><span>Sensores</span></a>
+                <a href="login.html" id="logout"><span>Cerrar sesión</span></a>
+            </nav>
+        </aside>
 
-    <!-- Main Dashboard -->
-    <main>
-        <section class="dashboard">
-            <h1>Dashboard SafeWare</h1>
-            <div class="stats">
-                <div class="stat-card">
-                    <h3>25</h3>
-                    <p>Sensores Activos</p>
-                </div>
-                <div class="stat-card">
-                    <h3>250</h3>
-                    <p>Alertas Pendientes</p>
-                </div>
-                <div class="stat-card">
-                    <h3>12</h3>
-                    <p>Protocolos Activados</p>
-                </div>
-            </div>
+        <main class="main-content">
+            <header>
+                <h1>Bienvenido, <span id="user-name"></span></h1>
+                <p>Rol: <strong id="user-role"></strong></p>
+            </header>
 
-            <div class="charts">
-                <div class="chart-card">
-                    <h3>Estado del Sistema</h3>
-                    <div class="chart">
-                        <!-- Graph or gauge here -->
-                    </div>
+            <section class="cards">
+                <div class="card">
+                    <h3>Alertas Activas</h3>
+                    <p id="alert-count">0</p>
                 </div>
-                <div class="chart-card">
-                    <h3>Alertas Recientes</h3>
-                    <div class="chart">
-                        <!-- Recent alert list here -->
-                    </div>
+                <div class="card">
+                    <h3>Usuarios</h3>
+                    <p id="user-count">0</p>
                 </div>
-            </div>
-        </section>
-    </main>
+                <div class="card">
+                    <h3>Sensores Online</h3>
+                    <p>24</p>
+                </div>
+            </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 SafeWare | Todos los derechos reservados</p>
-    </footer>
+            <section class="alerts-list">
+                <h2>Últimas Alertas</h2>
+                <div id="alerts-container"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="../assets/scripts/dashboard.js"></script>
 </body>
 </html>
