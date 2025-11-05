@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeWare - Usuarios</title>
+  <link rel="icon" href="../assets/img/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles/global.css">
+  <link rel="stylesheet" href="../assets/styles/dashboard.css">
+  <link rel="stylesheet" href="../assets/styles/usuarios.css">
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="../assets/img/logo.png" alt="Logo">
+        <h3>SafeWare</h3>
+      </div>
+      <nav>
+        <a href="dashb.html"><span>Dashboard</span></a>
+        <a href="#" class="active"><span>Usuario</span></a>
+        <a href="alertas.html"><span>Alertas</span></a>
+        <a href="sensores.html"><span>Sensores</span></a>
+        <a href="login.html" id="logout"><span>Cerrar sesión</span></a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <h1>Gestión de Usuarios</h1>
+        <p>Consulta y administración de roles del sistema.</p>
+      </header>
+
+      <section class="user-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Correo</th>
+              <th>Rol</th>
+            </tr>
+          </thead>
+          <tbody id="user-list"></tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <script src="../assets/scripts/usuarios.js"></script>
+</body>
+</html>

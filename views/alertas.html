@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeWare - Alertas</title>
+  <link rel="icon" href="../assets/img/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles/global.css">
+  <link rel="stylesheet" href="../assets/styles/dashboard.css">
+  <link rel="stylesheet" href="../assets/styles/alertas.css">
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="../assets/img/logo.png" alt="Logo">
+        <h3>SafeWare</h3>
+      </div>
+      <nav>
+        <a href="dashb.html"><span>Dashboard</span></a>
+        <a href="usuarios.html"><span>Usuario</span></a>
+        <a href="#" class="active"><span>Alertas</span></a>
+        <a href="sensores.html"><span>Sensores</span></a>
+        <a href="login.html" id="logout"><span>Cerrar sesión</span></a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <h1>Alertas del Sistema</h1>
+        <p>Monitorea las incidencias registradas recientemente.</p>
+      </header>
+
+      <section class="alerts-container" id="alerts-container"></section>
+    </main>
+  </div>
+
+  <script src="../assets/scripts/alertas.js"></script>
+</body>
+</html>
+

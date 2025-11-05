@@ -1,0 +1,36 @@
+.sensor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.sensor-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  border-left: 6px solid #2DD574;
+  transition: transform 0.2s;
+}
+
+.sensor-card:hover {
+  transform: translateY(-4px);
+}
+
+.sensor-card h3 {
+  color: #263D67;
+  margin-bottom: 8px;
+}
+
+.sensor-card p {
+  color: #555;
+  margin: 4px 0;
+}
+
+.sensor-card .estado {
+  font-weight: bold;
+}
+
+.sensor-card.alerta {
+  border-color: #e74c3c;
+}

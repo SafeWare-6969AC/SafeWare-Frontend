@@ -1,0 +1,29 @@
+.alerts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.alert-card {
+  background: white;
+  border-left: 6px solid #ccc;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.alert-card h3 {
+  margin: 0;
+  color: #263D67;
+  font-weight: 600;
+}
+
+.alert-card p {
+  margin: 6px 0;
+  color: #555;
+}
+
+.alert-card.critica { border-color: #e74c3c; }
+.alert-card.alta { border-color: #e67e22; }
+.alert-card.media { border-color: #f1c40f; }
+.alert-card.baja { border-color: #2DD574; }
