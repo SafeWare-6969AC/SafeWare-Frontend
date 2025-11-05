@@ -1,0 +1,134 @@
+/* General Setup */
+:root {
+    --color-primary: #007bff;
+    --color-primary-dark: #0056b3;
+    --color-secondary: #2DD574;
+    --color-text-primary: #043873;
+    --color-text-secondary: #555;
+    --color-border: #ddd;
+    --color-bg-light: #FEF9F6;
+    --color-shadow-light: rgba(0, 0, 0, 0.1);
+    --color-shadow-strong: rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: var(--color-bg-light);
+    color: var(--color-text-primary);
+}
+
+/* Navbar */
+header {
+    background-color: #014335;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 120px;
+    height: clamp(30px, 65px); /* tamaño fluido para el logo */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--color-secondary);
+}
+
+/* Main Dashboard */
+.dashboard {
+    padding: 2rem;
+}
+
+.dashboard h1 {
+    color: var(--color-text-primary);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--color-shadow-light);
+    width: 30%;
+    text-align: center;
+    border: 1px solid var(--color-border);
+}
+
+.stat-card h3 {
+    font-size: 2rem;
+    color: var(--color-primary-dark);
+}
+
+.stat-card p {
+    font-size: 1.1rem;
+    color: var(--color-text-secondary);
+}
+
+/* Chart Section */
+.charts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--color-shadow-light);
+    width: 48%;
+    text-align: center;
+    border: 1px solid var(--color-border);
+}
+
+.chart-card h3 {
+    margin-bottom: 1rem;
+    color: var(--color-primary-dark);
+}
+
+.chart {
+    background-color: var(--color-bg-light);
+    height: 200px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--color-primary-dark);
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}

@@ -1,11 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    <link rel="icon" href="../assets/img/logo.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SafeWare</title>
+    <title>SafeWare - Login</title>
+     <meta name="author" content="TheAnalytics">
+    <!-- Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;500;600;700&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/login.css">
 </head>
 <body>
-    
+    <div class="login-container">
+        <div class="login-box">
+            <div class="logo">
+                <img src="../assets/img/logo.png" alt="SafeWare Logo">
+            </div>
+            <h2>Inicio de sesión</h2>
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="username">Usuario</label>
+                    <input type="text" id="username" name="username" placeholder="Ingrese su usuario" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required>
+                </div>
+                <button href='views/dashb.html' type="submit" class="btn">Ingresar</button>
+                <p class="forgot-password"><a href="#">¿Olvidaste tu contraseña?</a></p>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
